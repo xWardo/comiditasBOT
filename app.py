@@ -13,7 +13,7 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 #Para el comando start
 def start(bot, update):
-        bot.send_message(chat_id=update.message.chat_id, text="Hola! estas usando a ComiditasBOT. el bot que te informa de que comiditas son las que tenemos que hacer. \npara recibir ayuda escribre /help",
+        bot.send_message(chat_id=update.message.chat_id, text="Hola! estas usando a aaaaaaaaaaaComiditasBOT. el bot que te informa de que comiditas son las que tenemos que hacer. \npara recibir ayuda escribre /help",
         reply_markup=keyboard_cmds()) #Llama a la funcion que construye el teclado
 
 #Contruye el teclado con los comandos que yo le diga
