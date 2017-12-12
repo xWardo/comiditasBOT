@@ -17,11 +17,11 @@ def start(bot, update):
 def keyboard_cmds():
     command_buttons = [
         KeyboardButton("/help"),
-        KeyboardButton("/nuria"),
-        KeyboardButton("/aetm"),
-        KeyboardButton("/capitulito"),
-        KeyboardButton("/pole"),
-        KeyboardButton("/github"),
+        KeyboardButton("/comiditas"),
+        KeyboardButton("/comiditas_hechas"),
+        KeyboardButton("/comiditas_por_hacer"),
+        KeyboardButton("pole"),
+        KeyboardButton("/Comiditas favoritas"),
         KeyboardButton("/donaciones"),
         KeyboardButton("/start"),
     ]
