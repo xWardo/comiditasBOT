@@ -1,5 +1,5 @@
 from telegram.ext import Updater #Importas las librerias
-updater = Updater(token='458849790:AAG9dLDx5f_jNlA8NjnJl_-gTvmW2nN8nh4') #Creas el updater para mantener el bot siempre activo
+updater = Updater(token='489218394:AAHc1__5vd2hiKBLNFGExNuhRuvD4Voi0mU') #Creas el updater para mantener el bot siempre activo
 from telegram import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove, ParseMode #librerias para cambiar el teclado
 dispatcher = updater.dispatcher #Para que el updater acceda mas rapido al dispatcher
 from telegram.ext import CommandHandler
@@ -15,18 +15,18 @@ logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s
 
 #Para el comando start
 def start(bot, update):
-        bot.send_message(chat_id=update.message.chat_id, text="Hola! estas usando a AetmBOT. para recibir ayuda escribre /help",
+        bot.send_message(chat_id=update.message.chat_id, text="Hola! estas usando a ComiditasBOT. el bot que te informa de que comiditas son las que tenemos que hacer. \npara recibir ayuda escribre /help",
         reply_markup=keyboard_cmds()) #Llama a la funcion que construye el teclado
 
 #Contruye el teclado con los comandos que yo le diga
 def keyboard_cmds():
     command_buttons = [
         KeyboardButton("/help"),
-        KeyboardButton("/nuria"),
-        KeyboardButton("/aetm"),
-        KeyboardButton("/capitulito"),
+        KeyboardButton("/comiditas"),
+        KeyboardButton("/comiditas_hechas"),
+        KeyboardButton("/comiditas_por_hacer"),
         KeyboardButton("pole"),
-        KeyboardButton("/github"),
+        KeyboardButton("/Comiditas favoritas"),
         KeyboardButton("/donaciones"),
         KeyboardButton("/start"),
     ]
@@ -57,10 +57,10 @@ pole_handler = MessageHandler('pole', pole)
 dispatcher.add_handler(pole_handler)
 
 def ayuda(bot, update):
-        bot.send_message(chat_id=update.message.chat_id, text="Comandos del bot:\n\n/nuria para ver el numero divino\n\n/AETM para ver el estado de la serie AETM\n\n/capitulito anuncia del capitulito actual, haciendo un spam de la HOSTIA PUTA JODERRR.\n /pole para polear con mucha más felicidad y facilidad \n /github pagina de github (algo momentaneo para el admin) \n /donaciones Ayuda a este bot!!")
+        bot.send_message(chat_id=update.message.chat_id, text="Comandos del bot:\n\n/ \n\n \n\n \n  \n  \n ")
 
-def aetm(bot, update):
-        bot.send_message(chat_id=update.message.chat_id, text="Actualmente en parón MOMENTANEO.\n\nPuedes visitar el canal de youtube: https://goo.gl/drSjMT \n\nY el blog: http://luciatrapadaentusonrisa.blogspot.com.es")
+def comiditas(bot, update):
+        bot.send_message(chat_id=update.message.chat_id, text="COMIDITAS EN TOTAL\n\nKebab del centro\n\nCasa del cereal\n\nKebab de benimaclet\n\nTGB\n\nTaco BELL\n\nSubway\n\nLemon Grass\n\nPor favor, para contribuir con nuestra lista de comiditas, mandanos tu petición al Drive compatido, la lista será actualizada a su debido tiempo! Gracias por su colaboración :))
 
 def donaciones(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Dona a este bot para seguir manteniendo los servidores y ayudar al creador!\npaypal.me/memestroika")
