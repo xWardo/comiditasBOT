@@ -6,7 +6,7 @@ from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
 import os
 import sys
-from threading import Thread
+
 
 #Esto crea un registro en la consola para saber si falla algo pues que diga que es lo que falla
 import logging
@@ -56,9 +56,7 @@ dispatcher.add_handler(comiditas_handler)
 
 #Para que repita los mensajes
 def pole(bot, update):
-        text =  update.message.text
-        if text == "pole":
-          bot.send_message(chat_id=update.message.chat_id, text="Menuda poleada te has marcado maquina")
+        bot.send_message(chat_id=update.message.chat_id, text="Menuda poleada te has marcado maquina")
 
 pole_handler = MessageHandler('pole', pole)
 dispatcher.add_handler(pole_handler)
