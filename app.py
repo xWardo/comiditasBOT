@@ -41,16 +41,8 @@ def build_menu(buttons, n_cols=1, header_buttons=None, footer_buttons=None):
 
     return menu
 
-
-
 start_handler = CommandHandler('start', start) #Haces que con el comando /start se inicie la funcion start
 dispatcher.add_handler(start_handler) #Lo añades al dispatcher
-help_handler = CommandHandler('help', ayuda)
-ayuda_handler = CommandHandler('ayuda', ayuda)
-dispatcher.add_handler(ayuda_handler)
-dispatcher.add_handler(help_handler)
-comiditas_handler = CommandHandler('comiditas', comiditas)
-dispatcher.add_handler(comiditas_handler)
 
 #Para que repita los mensajes
 def pole(bot, update):
@@ -61,9 +53,17 @@ dispatcher.add_handler(pole_handler)
 
 def ayuda(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Comandos del bot:\n\n/ \n\n \n\n \n  \n  \n ")
+    
+help_handler = CommandHandler('help', ayuda)
+ayuda_handler = CommandHandler('ayuda', ayuda)
+dispatcher.add_handler(ayuda_handler)
+dispatcher.add_handler(help_handler)
 
 def comiditas(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="COMIDITAS EN TOTAL\n\nKebab del centro\n\nCasa del cereal\n\nKebab de benimaclet\n\nTGB\n\nTaco BELL\n\nSubway\n\nLemon Grass\n\nPor favor, para contribuir con nuestra lista de comiditas, mandanos tu petición al Drive compatido, la lista será actualizada a su debido tiempo! Gracias por su colaboración :)")
+
+comiditas_handler = CommandHandler('comiditas', comiditas)
+dispatcher.add_handler(comiditas_handler)
 
 def donaciones(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Dona a este bot para seguir manteniendo los servidores y ayudar al creador!\npaypal.me/memestroika")
