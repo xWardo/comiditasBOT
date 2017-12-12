@@ -81,14 +81,9 @@ help_handler = CommandHandler('help', ayuda)
 ayuda_handler = CommandHandler('ayuda', ayuda)
 dispatcher.add_handler(ayuda_handler)
 dispatcher.add_handler(help_handler)
-aetm_handler = CommandHandler('aetm', aetm)
-dispatcher.add_handler(aetm_handler)
-donaciones_handler = CommandHandler('donaciones', donaciones)
-dispatcher.add_handler(donaciones_handler)
-nuria_handler = CommandHandler('nuria', nuria)
-dispatcher.add_handler(nuria_handler)
-capitulito_handler = CommandHandler('capitulito', capitulito)
-dispatcher.add_handler(capitulito_handler)
+comiditas_handler = CommandHandler('comiditas', comiditas)
+dispatcher.add_handler(comiditas_handler)
+
 
 #updater = Updater("458849790:AAG9dLDx5f_jNlA8NjnJl_-gTvmW2nN8nh4")
 #dp = updater.dispatcher
