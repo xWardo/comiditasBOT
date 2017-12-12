@@ -1,5 +1,5 @@
 from telegram.ext import Updater #Importas las librerias
-updater = Updater(token='489218394:AAHc1__5vd2hiKBLNFGExNuhRuvD4Voi0mU') #Creas el updater para mantener el bot siempre activo
+updater = Updater(token='489218394:AAHc1__5vd2hiKBLNFGExNuhRuvD4Voi0mUxxx') #Creas el updater para mantener el bot siempre activo
 from telegram import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove, ParseMode #librerias para cambiar el teclado
 dispatcher = updater.dispatcher #Para que el updater acceda mas rapido al dispatcher
 from telegram.ext import CommandHandler
