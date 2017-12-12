@@ -4,8 +4,6 @@ from telegram import KeyboardButton, ReplyKeyboardMarkup, ReplyKeyboardRemove, P
 dispatcher = updater.dispatcher #Para que el updater acceda mas rapido al dispatcher
 from telegram.ext import CommandHandler
 from telegram.ext import MessageHandler, Filters
-import os
-import sys
 
 
 #Esto crea un registro en la consola para saber si falla algo pues que diga que es lo que falla
@@ -71,7 +69,7 @@ def donaciones(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Dona a este bot para seguir manteniendo los servidores y ayudar al creador!\npaypal.me/memestroika")
 
 def nuria(bot, update):
-      bot.send_message(chat_id=update.message.chat_id, text="")
+        bot.send_message(chat_id=update.message.chat_id, text="")
 
 
 
