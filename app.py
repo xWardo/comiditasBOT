@@ -47,6 +47,13 @@ def build_menu(buttons, n_cols=1, header_buttons=None, footer_buttons=None):
 
 start_handler = CommandHandler('start', start) #Haces que con el comando /start se inicie la funcion start
 dispatcher.add_handler(start_handler) #Lo añades al dispatcher
+help_handler = CommandHandler('help', ayuda)
+ayuda_handler = CommandHandler('ayuda', ayuda)
+dispatcher.add_handler(ayuda_handler)
+dispatcher.add_handler(help_handler)
+comiditas_handler = CommandHandler('comiditas', comiditas)
+dispatcher.add_handler(comiditas_handler)
+
 #Para que repita los mensajes
 def pole(bot, update):
         text =  update.message.text
@@ -66,8 +73,7 @@ def donaciones(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Dona a este bot para seguir manteniendo los servidores y ayudar al creador!\npaypal.me/memestroika")
 
 def nuria(bot, update):
-      numero = random.randint(000000000, 999999999)
-      bot.send_message(chat_id=update.message.chat_id, text=numero)
+      bot.send_message(chat_id=update.message.chat_id, text="")
 
 
 
@@ -77,12 +83,7 @@ def capitulito(bot, update):
          bot.send_message(chat_id=update.message.chat_id, text="http://www.animeyt.tv/ver/shokugeki-no-souma-san-no-sara-10-sub-espanol")
          contador = contador+1
 
-help_handler = CommandHandler('help', ayuda)
-ayuda_handler = CommandHandler('ayuda', ayuda)
-dispatcher.add_handler(ayuda_handler)
-dispatcher.add_handler(help_handler)
-comiditas_handler = CommandHandler('comiditas', comiditas)
-dispatcher.add_handler(comiditas_handler)
+
 
 
 #updater = Updater("458849790:AAG9dLDx5f_jNlA8NjnJl_-gTvmW2nN8nh4")
