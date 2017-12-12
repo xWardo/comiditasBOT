@@ -60,7 +60,7 @@ def ayuda(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Comandos del bot:\n\n/ \n\n \n\n \n  \n  \n ")
 
 def comiditas(bot, update):
-        bot.send_message(chat_id=update.message.chat_id, text="COMIDITAS EN TOTAL\n\nKebab del centro\n\nCasa del cereal\n\nKebab de benimaclet\n\nTGB\n\nTaco BELL\n\nSubway\n\nLemon Grass\n\nPor favor, para contribuir con nuestra lista de comiditas, mandanos tu petición al Drive compatido, la lista será actualizada a su debido tiempo! Gracias por su colaboración :))
+        bot.send_message(chat_id=update.message.chat_id, text="COMIDITAS EN TOTAL\n\nKebab del centro\n\nCasa del cereal\n\nKebab de benimaclet\n\nTGB\n\nTaco BELL\n\nSubway\n\nLemon Grass\n\nPor favor, para contribuir con nuestra lista de comiditas, mandanos tu petición al Drive compatido, la lista será actualizada a su debido tiempo! Gracias por su colaboración :)")
 
 def donaciones(bot, update):
         bot.send_message(chat_id=update.message.chat_id, text="Dona a este bot para seguir manteniendo los servidores y ayudar al creador!\npaypal.me/memestroika")
